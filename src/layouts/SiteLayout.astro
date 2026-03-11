@@ -1,0 +1,49 @@
+﻿---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { title = SITE_TITLE, description = SITE_DESCRIPTION } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={title} description={description} />
+  </head>
+  <body>
+    <Header />
+    <main class="wrap main-content">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>
+
+<style is:global>
+body { margin: 0; font-family: Inter, system-ui, Arial, sans-serif; background: #0f172a; color: #e5e7eb; line-height: 1.6; }
+a { color: #7dd3fc; text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrap { width: min(1100px, calc(100% - 2rem)); margin: 0 auto; }
+.main-content { padding: 2rem 0 4rem; }
+.site-header, .site-footer { border-color: #334155; background: #111827; }
+.site-header .wrap, .site-footer .wrap { display: flex; gap: 1rem; justify-content: space-between; align-items: center; flex-wrap: wrap; padding: 1rem 0; }
+.brand { font-weight: 800; font-size: 1.15rem; }
+.nav { display: flex; gap: 1rem; flex-wrap: wrap; }
+.hero h1 { font-size: clamp(2rem, 4vw, 3.2rem); line-height: 1.1; }
+.lead { color: #cbd5e1; max-width: 800px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; margin: 2rem 0; }
+.card { background: #1e293b; border: 1px solid #334155; border-radius: 1rem; padding: 1.25rem; }
+.button { display: inline-block; padding: 0.8rem 1rem; border-radius: 0.75rem; border: 1px solid #334155; background: #1e293b; color: #e5e7eb; font-weight: 700; margin-right: 0.75rem; }
+.button.primary { background: #0369a1; }
+.callout { background: #082f49; border: 1px solid #0ea5e9; border-radius: 1rem; padding: 1rem; margin: 1.5rem 0; }
+.eyebrow { color: #7dd3fc; text-transform: uppercase; font-size: 0.8rem; font-weight: 800; letter-spacing: 0.08em; }
+.article-meta { color: #94a3b8; }
+.list-clean li { margin-bottom: 0.5rem; }
+</style>
