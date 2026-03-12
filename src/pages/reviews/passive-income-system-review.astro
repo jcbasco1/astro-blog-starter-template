@@ -1,65 +1,141 @@
 ---
-import BlogPost from "../../layouts/BlogPost.astro";
+import SiteLayout from "../../layouts/SiteLayout.astro";
 ---
 
-<BlogPost
-  title="Passive Income System Review"
-  description="A review of the Passive Income System training funnel and who it is for."
-  pubDate={new Date("2026-03-12")}
+<SiteLayout
+  title="Passive Income System Review | ExpositionHub"
+  description="A practical review of the Passive Income System training funnel and who it may fit."
 >
-  <h2>Overview</h2>
+  <main class="container">
+    <article class="review-card">
+      <p class="eyebrow">Featured Review</p>
+      <h1>Passive Income System Review</h1>
+      <p class="intro">
+        Passive Income System is a webinar-based training funnel designed to introduce
+        a service-based online business model built around leveraged fulfillment.
+      </p>
 
-  <p>
-    Passive Income System is a webinar-based training funnel designed to introduce
-    a service-based online business model.
-  </p>
+      <section>
+        <h2>Overview</h2>
+        <p>
+          This offer uses a free training or webinar entry point rather than a direct
+          checkout page. That can work better for readers who want context before
+          deciding whether the business model is worth exploring.
+        </p>
+      </section>
 
-  <h2>Pros</h2>
+      <section class="grid">
+        <div class="panel">
+          <h2>Pros</h2>
+          <ul>
+            <li>Free entry point</li>
+            <li>Clear beginner messaging</li>
+            <li>Structured webinar funnel</li>
+          </ul>
+        </div>
 
-  <ul>
-    <li>Free entry point</li>
-    <li>Clear beginner messaging</li>
-    <li>Structured webinar funnel</li>
-  </ul>
+        <div class="panel">
+          <h2>Cons</h2>
+          <ul>
+            <li>Generic make-money-online positioning</li>
+            <li>Better suited for warm audiences</li>
+            <li>Needs pre-sell context to convert better</li>
+          </ul>
+        </div>
+      </section>
 
-  <h2>Cons</h2>
+      <section>
+        <h2>Best use case</h2>
+        <p>
+          This funnel works best after a visitor has already read some context rather
+          than as a raw affiliate link dropped into a post or message.
+        </p>
+      </section>
 
-  <ul>
-    <li>Generic make-money-online positioning</li>
-    <li>Better suited for warm audiences</li>
-  </ul>
+      <p class="cta-wrap">
+        <a class="cta-button" href="/go/passive-income-system">
+          Continue to the featured training
+        </a>
+      </p>
+    </article>
+  </main>
+</SiteLayout>
 
-  <p>
-    <a href="/go/passive-income-system">Watch the training</a>
-  </p>
-</BlogPost>
+<style>
+  .container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 3rem 1.25rem;
+  }
 
-<h2>Overview</h2>
+  .review-card {
+    background: white;
+    border-radius: 18px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  }
 
-<p>
-Passive Income System is a webinar-based training funnel designed to introduce
-a service-based online business model.
-</p>
+  .eyebrow {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #64748b;
+    margin-bottom: 0.5rem;
+  }
 
-<h2>Pros</h2>
+  h1 {
+    font-size: 2.5rem;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+  }
 
-<ul>
-<li>Free entry point</li>
-<li>Clear beginner messaging</li>
-<li>Structured webinar funnel</li>
-</ul>
+  .intro {
+    font-size: 1.125rem;
+    color: #334155;
+    margin-bottom: 2rem;
+  }
 
-<h2>Cons</h2>
+  section {
+    margin-top: 2rem;
+  }
 
-<ul>
-<li>Generic make-money-online positioning</li>
-<li>Better suited for warm audiences</li>
-</ul>
+  h2 {
+    margin-bottom: 0.75rem;
+  }
 
-<p>
-<a href="/go/passive-income-system">
-Watch the training
-</a>
-</p>
+  .grid {
+    display: grid;
+    gap: 1rem;
+  }
 
-</BlogPost>
+  .panel {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 1rem 1.25rem;
+  }
+
+  .cta-wrap {
+    margin-top: 2rem;
+  }
+
+  .cta-button {
+    display: inline-block;
+    padding: 0.9rem 1.25rem;
+    background: #0f172a;
+    color: white;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .cta-button:hover {
+    background: #1e293b;
+  }
+
+  @media (min-width: 768px) {
+    .grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+</style>
