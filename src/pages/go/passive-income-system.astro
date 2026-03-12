@@ -1,0 +1,20 @@
+---
+const targetUrl = "YOUR_DIGISTORE_AFFILIATE_URL";
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="refresh" content={`0;url=${targetUrl}`} />
+<meta name="robots" content="noindex,nofollow" />
+<title>Redirecting...</title>
+<script define:vars={{ targetUrl }}>
+window.location.replace(targetUrl);
+</script>
+</head>
+<body>
+Redirecting...
+<a href={targetUrl}>Click here if not redirected</a>
+</body>
+</html>
