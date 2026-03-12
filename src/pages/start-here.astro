@@ -1,24 +1,124 @@
-
----
+﻿---
 import SiteLayout from "../layouts/SiteLayout.astro";
 ---
 
-<SiteLayout title="Start Here">
+<SiteLayout
+  title="Start Here | ExpositionHub"
+  description="A starting point for readers exploring online business models and curated training resources."
+>
+  <main class="container">
+    <section class="hero-card">
+      <p class="eyebrow">Start Here</p>
+      <h1>Explore Online Business Models More Clearly</h1>
+      <p class="intro">
+        If you are researching online business models, the best first step is to
+        understand the model before chasing the pitch.
+      </p>
+      <p>
+        ExpositionHub currently highlights one featured training resource and a
+        small set of supporting pages to help you evaluate whether the model is
+        relevant to your goals.
+      </p>
+      <p class="cta-wrap">
+        <a class="cta-button" href="/best/best-online-business-for-beginners">
+          See the best beginner business models
+        </a>
+      </p>
+    </section>
 
-<h1>Start Here</h1>
+    <section class="grid">
+      <div class="panel">
+        <h2>Read the guide</h2>
+        <p>
+          See a practical breakdown of service-based online business, affiliate
+          publishing, and digital product models.
+        </p>
+        <p><a href="/guides/how-to-choose-your-first-affiliate-network">Read the guide</a></p>
+      </div>
 
-<p>
-If you're exploring online business models and passive income strategies,
-the best place to begin is understanding the model first.
-</p>
+      <div class="panel">
+        <h2>Review the training</h2>
+        <p>
+          Read the current featured review before continuing to the provider page.
+        </p>
+        <p><a href="/reviews/passive-income-system-review">Read the review</a></p>
+      </div>
 
-<p>
-We currently feature a training resource explaining one approach to building
-an online business with outsourced fulfillment.
-</p>
-
-<a href="https://www.digistore24.com/redir/361682/expositionhub/">
-Watch the free training
-</a>
-
+      <div class="panel">
+        <h2>Featured free training</h2>
+        <p>
+          Ready for the direct bridge page? Continue to the featured training overview.
+        </p>
+        <p><a href="/free-training">View the training page</a></p>
+      </div>
+    </section>
+  </main>
 </SiteLayout>
+
+<style>
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 3rem 1.25rem;
+  }
+
+  .hero-card,
+  .panel {
+    background: #0f172a;
+    border: 1px solid #1e293b;
+    border-radius: 18px;
+    padding: 2rem;
+    color: #e2e8f0;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+  }
+
+  .eyebrow {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #94a3b8;
+    margin-bottom: 0.5rem;
+  }
+
+  h1 {
+    font-size: 2.7rem;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+    color: #f8fafc;
+  }
+
+  .intro {
+    font-size: 1.15rem;
+    color: #cbd5e1;
+  }
+
+  .cta-wrap {
+    margin-top: 1.5rem;
+  }
+
+  .cta-button {
+    display: inline-block;
+    padding: 0.95rem 1.25rem;
+    border-radius: 12px;
+    background: #22c55e;
+    color: #052e16;
+    text-decoration: none;
+    font-weight: 700;
+  }
+
+  .cta-button:hover {
+    background: #16a34a;
+  }
+
+  .grid {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1.25rem;
+  }
+
+  @media (min-width: 900px) {
+    .grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+</style>
