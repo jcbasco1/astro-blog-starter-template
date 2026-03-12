@@ -1,5 +1,6 @@
 ﻿---
 import SiteLayout from '../layouts/SiteLayout.astro';
+import { featuredContent } from '../data/featuredContent';
 ---
 
 <SiteLayout title="ExpositionHub | Affiliate Marketing Guides, Reviews, and Comparisons" description="Practical beginner-friendly affiliate marketing guides, network reviews, and platform comparisons.">
@@ -7,13 +8,23 @@ import SiteLayout from '../layouts/SiteLayout.astro';
     <p class="eyebrow">Day 1 MVP Live</p>
     <h1>Practical affiliate marketing guidance for beginners who want traction fast.</h1>
     <p class="lead">ExpositionHub helps new affiliate marketers evaluate networks, compare platforms, and choose tools with less guesswork.</p>
-    <p><a class="button primary" href="/best/best-affiliate-networks-for-beginners/">Start with the best networks</a> <a class="button" href="/guides/how-to-choose-your-first-affiliate-network/">Read the beginner guide</a></p>
+    <p>
+      <a class="button primary" href="/best/best-affiliate-networks-for-beginners/">Start with the best networks</a>
+      <a class="button" href="/guides/how-to-choose-your-first-affiliate-network/">Read the beginner guide</a>
+    </p>
   </section>
+
   <div class="grid">
-    <article class="card"><h3><a href="/guides/how-to-choose-your-first-affiliate-network/">How to Choose Your First Affiliate Network</a></h3><p>A practical framework for beginners evaluating their first affiliate platform.</p></article>
-    <article class="card"><h3><a href="/reviews/clickbank-review-for-beginners/">ClickBank Review for Beginners</a></h3><p>A plain-English review of one of the best-known digital affiliate networks.</p></article>
-    <article class="card"><h3><a href="/compare/clickbank-vs-digistore24/">ClickBank vs Digistore24</a></h3><p>A practical comparison covering ease of entry, offer mix, and fit.</p></article>
-    <article class="card"><h3><a href="/best/best-affiliate-networks-for-beginners/">Best Affiliate Networks for Beginners</a></h3><p>A quick-start roundup to help new publishers choose the right first platform.</p></article>
+    {featuredContent.map((item) => (
+      <article class="card">
+        <p class="eyebrow">{item.type}</p>
+        <h3><a href={item.href}>{item.title}</a></h3>
+        <p>{item.description}</p>
+      </article>
+    ))}
   </div>
-  <section class="callout"><strong>Affiliate disclosure:</strong> Some pages on this site may contain affiliate links. Read the full <a href="/disclosure/">affiliate disclosure</a>.</section>
+
+  <section class="callout">
+    <strong>Affiliate disclosure:</strong> Some pages on this site may contain affiliate links. Read the full <a href="/disclosure/">affiliate disclosure</a>.
+  </section>
 </SiteLayout>
