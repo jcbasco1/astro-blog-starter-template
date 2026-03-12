@@ -1,0 +1,47 @@
+﻿---
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import { comparisons } from '../../data/comparisons';
+
+export async function getStaticPaths() {
+  return comparisons.map((comparison) => ({
+    params: { slug: comparison.slug },
+    props: { comparison }
+  }));
+}
+
+const { comparison } = Astro.props;
+---
+
+<SiteLayout title={`${comparison.title} | ExpositionHub`} description={comparison.description}>
+  <p class="eyebrow">{comparison.eyebrow}</p>
+  <h1>{comparison.title}</h1>
+  <p class="article-meta">Head-to-head comparison for beginner affiliate marketers</p>
+
+  <p>{comparison.intro}</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Factor</th>
+        <th>{comparison.productA}</th>
+        <th>{comparison.productB}</th>
+      </tr>
+    </thead>
+    <tbody>
+      {comparison.rows.map((row) => (
+        <tr>
+          <td>{row.factor}</td>
+          <td>{row.a}</td>
+          <td>{row.b}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+
+  <h2>Verdict</h2>
+  <p>{comparison.verdict}</p>
+
+  <div class="callout">
+    <a class="button primary" href={comparison.ctaHref}>{comparison.ctaText}</a>
+  </div>
+</SiteLayout>
