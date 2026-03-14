@@ -1,0 +1,85 @@
+
+
+---
+const pageTitle = "10 Essential Tech Gadgets Under $25";
+const pageDescription =
+  "Cheap tech that is actually useful: USB-C cable, Bluetooth speaker, USB hub, wireless charger, and more.";
+const products = [
+  {
+    name: "USB-C Charging Cable",
+    price: "Under $10",
+    why: "An affordable essential that is the standard going forward for charging and connecting from a trusted brand.",
+    href: "https://amzn.to/4s9s4BT"
+  },
+  {
+    name: "Portable Bluetooth Speaker",
+    price: "Under $15",
+    why: "Compact, portable and easy to connect in the office and on-the-go.",
+    href: "https://amzn.to/4usRj3N"
+  },
+  {
+    name: "Multi-Port USB Hub",
+    price: "Around $15–$20",
+    why: "Practical for laptops, desks, and travel setups.",
+    href: "https://amzn.to/4sIExwc"
+  },
+  {
+    name: "Wireless Charging Pad",
+    price: "Around $15–$20",
+    why: "Portable, universally compatible while avoiding charging port wear.",
+    href: "https://amzn.to/4bH5jPQ"
+  },
+  {
+    name: "Ergonomic Earbuds Case / Accessory",
+    price: "Under $20",
+    why: "Stylish, functional and affordable.",
+    href: "https://amzn.to/4rui2Kk"
+  }
+];
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle} | ExpositionHub</title>
+    <meta name="description" content={pageDescription} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={pageDescription} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://expositionhub.com/guides/tech-gadgets-under-25" />
+  </head>
+  <body style="font-family: Arial, sans-serif; margin: 0; background: #f7f7f7; color: #111;">
+    <main style="max-width: 900px; margin: 0 auto; padding: 32px 20px;">
+      <h1 style="font-size: 2.2rem; margin-bottom: 12px;">10 Essential Tech Gadgets Under $25</h1>
+
+      <p style="font-size: 1rem; line-height: 1.6;">
+        Looking for cheap tech that’s actually useful? This list highlights affordable gadgets for desks,
+        travel, home offices, and everyday convenience.
+      </p>
+
+      <p style="font-size: 0.95rem; line-height: 1.6; background: #fff7d6; padding: 12px 14px; border-radius: 8px;">
+        <strong>Disclosure:</strong> As an Amazon Associate I earn from qualifying purchases.
+      </p>
+
+      <section style="display: grid; gap: 18px; margin-top: 24px;">
+        {products.map((product, index) => (
+          <article style="background: white; border-radius: 12px; padding: 20px; box-shadow: 0 1px 8px rgba(0,0,0,0.08);">
+            <h2 style="margin-top: 0; font-size: 1.3rem;">{index + 1}. {product.name}</h2>
+            <p><strong>Typical price:</strong> {product.price}</p>
+            <p>{product.why}</p>
+            <a
+              href={product.href}
+              target="_blank"
+              rel="nofollow sponsored"
+              style="display: inline-block; padding: 12px 18px; background: #111; color: white; text-decoration: none; border-radius: 8px; font-weight: bold;"
+            >
+              Check price on Amazon
+            </a>
+          </article>
+        ))}
+      </section>
+    </main>
+  </body>
+</html>
+
