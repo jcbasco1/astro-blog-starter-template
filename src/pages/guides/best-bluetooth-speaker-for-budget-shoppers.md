@@ -40,8 +40,12 @@ For most buyers, **Anker Soundcore 2** is the best place to start.
 | Product | Best For | Price Band | Strength | Tradeoff | Link |
 |---|---|---|---|---|---|
 | JBL Go 3 | ultra-portable budget buyers | budget | portability | power and battery life | [View](https://amzn.to/40HD8u0) |
-| **Anker Soundcore 2** | best overall value | budget to lower-midrange | balanced value | premium features | [View](https://amzn.to/4cZzMtF) |
+| **Anker Soundcore 2 ⭐ Best Overall** | best overall value | budget to lower-midrange | balanced value | premium features | [View](https://amzn.to/4cZzMtF) |
 | Sony SRS-XB13 | brand-conscious compact buyers | lower-midrange | brand trust | price efficiency | [View](https://amzn.to/4bmMgdN) |
+
+<a class="cta-button" href="AFFILIATE_LINK">
+Compare prices for top picks on Amazon
+</a>
 
 ---
 
@@ -57,7 +61,7 @@ For most buyers, **Anker Soundcore 2** is the best place to start.
 **Key strength:** portability  
 **Tradeoff:** power and battery life
 
-<a class="cta-button" href="https://amzn.to/40HD8u0">Check current price on Amazon</a>
+<a class="cta-button" href="https://amzn.to/40HD8u0">Check today's price on Amazon</a>
 
 ### Anker Soundcore 2
 
@@ -69,7 +73,7 @@ For most buyers, **Anker Soundcore 2** is the best place to start.
 **Key strength:** balanced value  
 **Tradeoff:** premium features
 
-<a class="cta-button" href="https://amzn.to/4cZzMtF">Check current price on Amazon</a>
+<a class="cta-button" href="https://amzn.to/4cZzMtF">Check today's price on Amazon</a>
 
 ### Sony SRS-XB13
 
@@ -81,7 +85,7 @@ For most buyers, **Anker Soundcore 2** is the best place to start.
 **Key strength:** brand trust  
 **Tradeoff:** price efficiency
 
-<a class="cta-button" href="https://amzn.to/4bmMgdN">Check current price on Amazon</a>
+<a class="cta-button" href="https://amzn.to/4bmMgdN">Check today's price on Amazon</a>
 
 ---
 
