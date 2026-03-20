@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/SiteLayout.astro
 title: "Best bluetooth speaker for Budget Shoppers"
 slug: "best-bluetooth-speaker-for-budget-shoppers"
 opportunity_key: "bluetooth_speaker"
